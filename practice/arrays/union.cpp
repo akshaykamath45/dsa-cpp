@@ -9,7 +9,7 @@ vector<int> removeDuplicates(vector<int> &arr)
     map<int, int> hash;
     for (int i = 0; i < n; i++)
     {
-        hash[arr[i]++];
+        hash[arr[i]]++;
     }
     for (auto i : hash)
     {
