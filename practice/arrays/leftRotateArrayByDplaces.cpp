@@ -33,6 +33,23 @@ void leftRotateArrayByD(vector<int> &arr, int n, int d)
     reverse(arr.begin(), arr.end());
 }
 
+// code from scratch
+// void reverse(int startIndex, int endIndex, int arr[])
+// {
+//     while (startIndex <= endIndex)
+//     {
+//         swap(arr[startIndex], arr[endIndex]);
+//         startIndex++;
+//         endIndex--;
+//     }
+// }
+// void rotateArr(int arr[], int d, int n)
+// {
+//     d = d % n;
+//     reverse(0, d - 1, arr);
+//     reverse(d, n - 1, arr);
+//     reverse(0, n - 1, arr);
+// }
 int main()
 {
     vector<int> arr = {1, 2, 3, 4, 5, 6};
