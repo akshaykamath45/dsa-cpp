@@ -64,7 +64,7 @@ void sortColors1(vector<int> &arr)
     int high = n - 1; // represent all 2's - high to mid-1
     while (mid <= high)
     {
-        if (arr[mid] == 0)
+        if (arr[mid] == 0) 
         {
             swap(arr[low], arr[mid]);
             low++;
